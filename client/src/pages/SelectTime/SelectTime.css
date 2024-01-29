@@ -1,0 +1,113 @@
+.sect {
+	display: flex;
+	max-width: 800px;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 20px;
+	background-color: whitesmoke;
+	min-height: 30vh;
+	text-align: center;
+	justify-content: center;
+}
+
+.con {
+	display: flex;
+	max-width: 800px;
+	margin: 10px auto;
+	padding: 20px;
+	background-color: whitesmoke;
+
+}
+.time {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.dr {
+	padding: 10px;
+	color: #006;
+}
+
+.cen {
+	margin: 0 auto;
+}
+.timeButton {
+	background-color: #006;
+	color: white;
+	font-size: 16px;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-left: 30px;
+	width: 100px;
+}
+
+.sect .cen .active{
+	background-color: white;
+	color: white;
+	border: 1px solid #ff9e15;
+	color: #006;
+}
+
+.timeButton:hover {
+	background-color: white;
+	color: white;
+	border: 1px solid #ff9e15;
+	color: #006;
+}
+
+.date {
+	display: flex;
+	justify-content: center;
+	padding-top: 40px;
+}
+
+#date {
+	width: 50%;
+	padding: 8px 12px;
+	border: 1px solid #006;
+	border-radius: 10px;
+	color: white;
+	background-color: #006;
+}
+#date:focus {
+	background-color: whitesmoke;
+	border: 1px solid orange;
+	color: #006;
+}
+
+@media screen and (max-width: 400px) {
+	.timeButton {
+		margin-bottom: 10px;
+	}
+
+}
+@media screen and (max-width: 800px) {
+	.timeButton {
+		margin-bottom: 10px;
+	}
+	.cen {
+		text-align: center;
+	}
+}
+.done {
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+}
+#done {
+	background-color: #006;
+	color: white;
+	border: 1px solid #006;
+	font-size: 16px;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-left: 30px;
+	width: 100px;
+}
+#done:hover {
+	background-color: white;
+	color: #006;
+	border: 1px solid orange;
+}

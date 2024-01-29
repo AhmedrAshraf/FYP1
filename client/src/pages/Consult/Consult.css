@@ -1,0 +1,89 @@
+.main {
+	min-height: 40vh;
+	padding-top: 50px;
+	background-color: lavender;
+}
+.main .containers {
+	display: flex;
+	margin: 0 auto;
+	width: 500px;
+	padding-left: 7px;
+	box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.main .containers .left img{
+	width: 210px;
+	margin-top: 10px;
+	height: 210px;
+}
+.main .containers .right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 12px;
+}
+
+@media screen and (max-width: 400px) {
+	.main{min-height:50vh;}
+}
+@media screen and (max-width: 800px) {
+	.main{min-height:50vh;}
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+	.main .containers .left img {
+		width: 120px;
+	}
+
+	.circle {
+		margin-left: 48px !important;
+	}
+
+	.main .containers .right {
+		max-width: 180px;
+	}
+
+	.main .containers {
+		max-width: 308px;
+	}
+}
+.but {
+	margin-top: 30px;
+	background-color: #006;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	border: 1px solid #006;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.but:hover {
+	background-color: white;
+	color: #006;
+	border: 1px solid #006;
+}
+
+.circle {
+	width: 15px;
+	height: 15px;
+	background-color: #006;
+	margin-top: -20px;
+	margin-left: 200px;
+	border-radius: 50%;
+	animation: zoom-in-zoom-out 1s ease infinite;
+}
+@keyframes zoom-in-zoom-out {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.5, 1.5);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}

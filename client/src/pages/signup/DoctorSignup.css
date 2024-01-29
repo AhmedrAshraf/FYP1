@@ -1,0 +1,70 @@
+.containe {
+	display: flex;
+	justify-content: center;
+}
+.containe .signup-form {
+	min-width: 400px;
+	margin: 60px auto;
+	padding: 40px;
+	background-color: white;
+	box-shadow: 3px 3px 5px 6px #ccc;
+}
+input[type="text"],
+select {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+.col {
+	padding: 12px;
+	resize: vertical;
+}
+
+button[type="submit"]:hover {
+	background-color: #006;
+	color: orange;
+}
+#city:focus {
+	border: 1px solid orange;
+	background-color: lavender;
+}
+#category:focus {
+	border: 1px solid orange;
+	background-color: lavender;
+}
+#experience:focus {
+	border: 1px solid orange;
+	background-color: lavender;
+}
+
+.col-25 {
+	float: left;
+	width: 40%;
+	margin-top: 6px;
+	color: #006;
+}
+
+@media screen and (max-width: 600px) {
+	.col-25,
+	input[type="text"] {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+
+.bg {
+	background-image: url(../../Images/bgImage.jfif);
+	min-height: 70vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	min-width: 100%;
+}
+.h1 {
+	text-align: center;
+	color: #006;
+}

@@ -1,0 +1,119 @@
+.navbar .profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+.icon{
+font-size: 100px;
+}
+.navbar {
+  width: 100%;
+  padding: 20px 10px;
+  background-color: gray;
+}
+.navbar ul {
+  display: flex;
+  margin: 0 auto;
+  max-width: 670px;
+  align-items: center;
+}
+.title {
+  margin-right: auto;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+}
+.navbar button,
+.navbar a {
+  margin-left: 16px;
+}
+.navbar a {
+  color: #333;
+  text-decoration: none;
+}
+.dropbtn {
+  background-color: #006;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #006;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.logout{
+  background-color: #006;
+  color: white;
+  padding: 9px;
+  font-size: 16px;
+  width: 10%;
+ border-radius: 10px;
+  cursor: pointer;
+}
+.logout:hover { 
+  color: #006;
+  background-color: white;
+  /* border: 1px solid; */
+ border-color: #006;
+}
+
+.call:hover{
+  background-color: white;
+  color: #006;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  margin-left: 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content .d {
+  color: #006;
+  padding-left: 30px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content .d:hover {
+  background-color: #006;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background: white;
+  color: #006;
+  border: 1px solid #006;
+}
+
+.bell {
+  background-color: #006;
+  color: white;
+  padding: 9px;
+  font-size: 16px;
+  width: 10%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.bell-icon{
+  font-size: 22px;
+  
+}
+/* .bell:hover{
+  background-color: white;
+  color: #006;
+  border: 1px solid  #006;
+} */

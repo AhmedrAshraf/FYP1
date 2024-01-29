@@ -1,0 +1,23 @@
+.foot{
+   min-height: 20vh;
+   background-color: black;
+   color: white;
+}
+.foot-center{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 30px;
+}
+@media screen and (max-width:1200px) {
+   .foot-center{
+    flex-direction: column;
+   }
+  
+ }
+ @media screen and (max-width:800px) {
+   .foot-center{
+   padding-left: 7px;
+   }
+  
+ }

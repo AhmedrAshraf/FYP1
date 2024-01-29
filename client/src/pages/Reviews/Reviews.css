@@ -1,0 +1,82 @@
+.section-five {
+	min-height: 40vh;
+	background-color: #f5f5f5;
+}
+
+.Reviews {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	gap: 2rem;
+	padding-top: 70px;
+	padding-bottom: 10px;
+}
+.Review {
+	padding: 4px 4px 4px 16px;
+	position: relative;
+	background-color: white;
+	color: #006;
+	min-height: 250px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+@media (min-width: 600px) {
+	.Reviews {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 50px;
+	}
+}
+
+@media (min-width: 900px) {
+	.Reviews {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+.Doc {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -32px;
+	left: 130px;
+	z-index: 1;
+}
+.Review:hover .Doc {
+	border: 3px solid orange;
+}
+
+.Review .ratings {
+	display: flex;
+	margin: 8px 0 16px;
+	color: orange;
+}
+
+@media (max-width: 599px) {
+	.Reviews {
+		grid-template-columns: repeat(1, 1fr);
+		padding: 50px;
+	}
+}
+
+@media (max-width: 800px) {
+	.Doc {
+		left: 110px;
+	}
+}
+
+@media (max-width: 400px) {
+	.Doc {
+		left: 80px;
+	}
+	.Review {
+		width: 250px;
+		padding-bottom: 50px;
+	}
+}

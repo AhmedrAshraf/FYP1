@@ -1,0 +1,125 @@
+.containe {
+	display: flex;
+	justify-content: center;
+}
+.containe .signup-form {
+	min-width: 400px;
+	margin: 60px auto;
+	padding: 40px;
+	background-color: white;
+	box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+@media screen and (max-width: 400px) {
+	.containe .signup-form {
+		min-width: 100px;
+		margin: 60px auto;
+		padding: 10px;
+		background-color: white;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.containe .signup-form {
+		min-width: 30px;
+		margin: 60px auto;
+		padding: 5px;
+		background-color: white;
+	}
+}
+
+.percentage {
+	color: "red" !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+.col {
+	padding: 12px;
+	resize: vertical;
+}
+button[type="submit"]:hover {
+	background-color: #006;
+	color: orange;
+}
+#fname:focus {
+	border: 1px solid orange;
+	background-color: lavender;
+}
+#city:focus {
+	border: 1px solid orange;
+	background-color: lavender;
+}
+#category:focus {
+	border: 1px solid orange;
+	background-color: lavender;
+}
+
+.col-25 {
+	float: left;
+	width: 40%;
+	margin-top: 6px;
+	color: #006;
+}
+
+@media screen and (max-width: 600px) {
+	.col-25 {
+		width: 100%;
+		margin-top: 0;
+	}
+	input[type="text"] {
+		max-width: 100%;
+		margin-top: 0;
+	}
+}
+
+.bg {
+	background-image: url(../../Images/bgImage.jfif);
+	min-height: 88.5vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	min-width: 100%;
+}
+.h1 {
+	text-align: center;
+	color: #006;
+}
+#email:focus {
+	border: 1px solid orange;
+	background-color: lavender;
+}
+
+#password:focus {
+	border: 1px solid orange;
+	background-color: lavender;
+}
+.bt {
+	width: 109%;
+	padding: 12px;
+	border: 1px solid orange;
+	border-radius: 4px;
+	resize: vertical;
+	color: orange;
+	font-weight: bold;
+	margin-left: -10px;
+	cursor: pointer;
+}
+
+.col .error {
+	width: 312px;
+}
+button[type="submit"]:hover {
+	background-color: #006;
+	color: orange;
+}

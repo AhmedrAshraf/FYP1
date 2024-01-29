@@ -1,0 +1,110 @@
+.notification {
+	min-height: 92vh;
+	background-color: lavender;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.notification-div {
+	display: flex;
+	max-width: 600px;
+	margin: 0px auto;
+	justify-content: center;
+	background-color: whitesmoke;
+	min-height: 20vh;
+	box-shadow: 3px 3px 5px 6px #ccc;
+	margin-bottom: 30px;
+	padding: 16px 0px;
+}
+
+@media screen and (max-width: 320px) {
+	.notification .notification-div .delete {
+		padding-top: 40px;
+	}
+}
+
+.notification .notification-div .details {
+	text-align: center;
+	color: #006;
+	font-weight: bold;
+}
+.notification .notification-div .w {
+	display: flex;
+}
+.notification .notification-div .w .delete {
+	margin: 150px 0px 0px -180px;
+}
+.notification .notification-div .w .dele {
+	margin: 150px 0px 0px -170px;
+}
+.notification .notification-div .w .createcall {
+	margin: 150px 0px 0px 100px;
+}
+
+.Reject {
+	background-color: #006;
+	color: white;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #006;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.Reject:hover {
+	background-color: white;
+	border: 1px solid #006;
+	color: #006;
+}
+.approve {
+	background-color: #006;
+	color: white;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #006;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.approve:hover {
+	background-color: white;
+	border: 1px solid #006;
+	color: #006;
+}
+.create {
+	background-color: #006;
+	color: white;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #006;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.create:hover {
+	background-color: white;
+	border: 1px solid #006;
+	color: #006;
+}
+
+@media screen and (max-width: 600px) {
+	.notification .notification-div {
+		max-width: 390px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.notification .notification-div {
+		max-width: 345px;
+	}
+}
+@media screen and (max-width: 320px) {
+	.notification .notification-div {
+		max-width: 300px;
+	}
+
+	.notification .notification-div .w .delete {
+		margin: 180px 0px 0px -140px;
+	}
+	.notification .notification-div .w .dele {
+		margin: 220px 0px 0px -170px;
+	}
+	.notification .notification-div .w .createcall {
+		margin: 220px 0px 0px 100px;
+	}
+}

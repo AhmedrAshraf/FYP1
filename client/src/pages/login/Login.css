@@ -1,0 +1,20 @@
+.contain {
+	display: flex;
+	justify-content: center;
+}
+.contain .login-form {
+	min-width: 400px;
+	margin: 60px auto;
+	padding: 40px;
+	background-color: white;
+	box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+@media screen and (max-width: 400px) {
+	.contain .login-form {
+		min-width: 100px;
+		margin: 60px auto;
+		padding: 50px;
+		background-color: white;
+	}
+}

@@ -1,0 +1,159 @@
+.DoctorDetails {
+  background-color: bisque;
+  min-height: 87vh;
+  min-width: 100%;
+}
+.fle {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  padding: 68px 200px;
+  gap: 20px;
+}
+
+.fle .flex-lef .rig p {
+  font-size: 22px;
+}
+
+.flex-lef {
+  display: flex;
+  background-color: #f1f1f1;
+  flex: 65% 1;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+.fle .flex-lef .lef {
+  width: 340px;
+  height: 340px;
+}
+.fle .flex-lef .lef .i {
+  width: 320px;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 320px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 900px) {
+  .fle {
+    flex-direction: column;
+    font-size: 30px;
+    padding: 16px 40px;
+    gap: 16px;
+  }
+
+  .fle .flex-lef .lef {
+    width: 295px;
+    height: 295px;
+  }
+
+  .fle .flex-lef .lef .i {
+    width: 280px;
+    height: 280px;
+  }
+  .fle .flex-lef .rig {
+    max-width: 400px !important;
+    margin-left: 0px !important;
+    font-size: 28px;
+  }
+
+  .DOC-button {
+    margin-bottom: 10px;
+  }
+}
+
+.fle .flex-lef .rig {
+  align-items: flex-start;
+  margin-left: 28px;
+  padding: 50px 20px 20px 4px;
+  margin-top: 0px;
+  line-height: 40px;
+  color: #006;
+  display: flex;
+  flex-direction: column;
+
+}
+@media screen and (max-width: 1200px) {
+  .fle .flex-lef .lef {
+    width: 295px;
+    height: 295px;
+  }
+
+  .fle .flex-lef .lef .i {
+    width: 280px;
+    height: 280px;
+  }
+  .fle .flex-lef .rig {
+    max-width: 200px;
+    align-items: center;
+    margin-left: 400px;
+  }
+}
+
+.flex-righ {
+  background-color: #f1f1f1;
+  flex: 35% 1;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding-top: 10px;
+  color: #006;
+}
+.sel {
+  width: 250px !important;
+  outline: none;
+}
+.sel:hover {
+  border: 1px solid #006;
+  color: orange;
+}
+@media screen and (max-width: 500px) {
+  .flex-lef {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .fle .flex-lef .rig {
+    max-width: 288px;
+    font-size: 24px;
+    padding: 12px;
+    align-items: self-start;
+    margin-left: unset;
+  }
+
+  .fle {
+    flex-direction: column;
+    padding: 12px 16px;
+  }
+
+  .fle .flex-lef .lef {
+    width: 280px;
+    height: 280px;
+  }
+
+  .fle .flex-lef .lef .i {
+    width: 268px;
+    height: 268px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sel {
+    width: 100px !important;
+  }
+}
+
+.b {
+  background-color: #006;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  border: 1px solid #006;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.b:hover {
+  background-color: white;
+  border: 1px solid #006;
+  color: #006;
+}

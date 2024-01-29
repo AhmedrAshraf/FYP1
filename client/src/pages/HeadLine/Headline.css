@@ -1,0 +1,22 @@
+.Headline {
+	min-height: 40vh;
+	background-color: white;
+}
+.head {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	font-size: 30px;
+}
+marquee {
+	width: 100%;
+	padding: 10px 0;
+}
+.marq {
+	padding: 40px;
+}
+@media (max-width: 400px) {
+	.head {
+		font-size: 20px;
+	}
+}

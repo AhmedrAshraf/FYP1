@@ -1,0 +1,68 @@
+.home {
+	background: url(https://s3-eu-west-1.amazonaws.com/mdpk/frontend/assets/images/header-bg.jpg)
+		no-repeat;
+	min-height: 65vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	text-align: center;
+}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.inp {
+	padding: 10px;
+	width: 380px !important;
+	position: relative;
+}
+.a {
+	padding: 11px;
+	width: 100px;
+	color: #006;
+	border: 1px solid #006;
+	font-weight: bolder;
+	cursor: pointer;
+	background-color: white;
+}
+.a:hover {
+	color: #006 !important;
+	border: 1px solid #006;
+	background-color: white !important;
+}
+
+@media screen and (max-width: 970px) {
+	.a {
+		display: none;
+	}
+}
+@media screen and (max-width: 600px) {
+	.centered {
+		max-width: 320px;
+	}
+	.inp {
+		max-width: 100px;
+	}
+}
+@media screen and (max-width: 350px) {
+	.centered {
+		max-width: 200px;
+	}
+	.inp {
+		max-width: 50px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.box {
+		max-width: 350px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.box {
+		max-width: 300px;
+	}
+}
