@@ -15,13 +15,12 @@ import "firebase/auth";
 // };
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBUYoj5YhfLfd2BqcbWvnLDLxsU03vlqYU",
-  authDomain: "capstone-fyp-new.firebaseapp.com",
-  projectId: "capstone-fyp-new",
-  storageBucket: "capstone-fyp-new.appspot.com",
-  messagingSenderId: "674059067055",
-  appId: "1:674059067055:web:5c41ba53d1a6d5b8edbe5a",
-  https: "//capstone-fyp-new-default-rtdb.firebaseio.com/"
+  apiKey: "AIzaSyCMIiE6qumCdgZmKB7uRWcqrfA4f-jBYtY",
+  authDomain: "capstone-2-6b8c3.firebaseapp.com",
+  projectId: "capstone-2-6b8c3",
+  storageBucket: "capstone-2-6b8c3.appspot.com",
+  messagingSenderId: "218332379633",
+  appId: "1:218332379633:web:a2a3542ca6b92a7ee42c50"
 };
 
 // init firebase
