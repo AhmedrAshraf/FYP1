@@ -24,9 +24,12 @@ const Cards = ({ doctors, search }) => {
 			return dct
 		})
 
+		
+
 		const sortedDocs = _.sortBy(filteredDoctors, 'distance');
 
 		setDocs(sortedDocs);
+		
 	}	
 	useEffect(() => {
 		if(user){

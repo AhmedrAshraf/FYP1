@@ -1,7 +1,7 @@
 import "./DoctorDetails.css";
 import { useLocation, useNavigate } from "react-router";
 
-const DoctorDetails = ({user, doctors, patients}) => {
+const DoctorDetails = ({user, doctors, fees, patients}) => {
 	const location = useLocation();
 	const Navigate = useNavigate();
 
@@ -56,7 +56,8 @@ const DoctorDetails = ({user, doctors, patients}) => {
 						}}
 					>
 						<p>Fee</p>
-						<p>Rs:500</p>
+						
+						<p>{location.state.data.fees}</p>
 					</div>
 					<div
 						style={{

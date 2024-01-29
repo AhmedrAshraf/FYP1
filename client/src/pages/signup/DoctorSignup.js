@@ -12,6 +12,7 @@ export default function Signup() {
 	const [email, setEmail] = useState("");
 	const [displayName, setdisplayName] = useState("");
 	const [experience, setExperience] = useState("");
+	const [fees, setFees] = useState("");
 	const [city, setCity] = useState("");
 	const [cityObj, setCityObj] = useState({});
 	const [cityList, setCityList] = useState([])
@@ -35,7 +36,8 @@ export default function Signup() {
 				role,
 				cityObj,
 				category,
-				experience
+				experience,
+				fees
 			);
 		}
 	}, [url]);
@@ -178,6 +180,19 @@ export default function Signup() {
 							value={experience}
 						/>
 					</div>
+					<div className="col-25">
+						<label>fees</label>
+					</div>
+					<div>
+						<input
+							type="text"
+							id="fees"
+							required
+							placeholder="Fees"
+							onChange={(e) => setFees(e.target.value)}
+							value={fees}
+						/>
+					</div>
 
 					<div className="col-25">
 						<label>City</label>
@@ -188,7 +203,6 @@ export default function Signup() {
 							value={city}
 							type="text"
 							id="city"
-							name="firstname"
 							placeholder="City"
 						/>
 						{cityList.length > 0 && (

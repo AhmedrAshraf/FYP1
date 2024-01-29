@@ -19,7 +19,8 @@ export const useSignup = () => {
 		role,
 		city,
 		category,
-		experience
+		experience,
+		fees
     ) => {
         setError(null);
 		setIsPending(true);
@@ -50,6 +51,7 @@ export const useSignup = () => {
 					role,
 					url,
 					experience,
+					fees,
 					id: res.user.uid,
 					notification: [],
 				});
