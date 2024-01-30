@@ -160,10 +160,17 @@ export default function Signup() {
 							<option value="anesthesiology">Anesthesiology</option>
 							<option value="ophthalmology">Ophthalmology</option>
 							<option value="pediatrics">Pediatrics</option>
-							<option value="psychiatry">Psychiatry</option>
+							<option value="generalphysician">General Physician</option>
 							<option value="clinical pathology">Clinical Pathology</option>
 							<option value="nephrology">Nephrology</option>
 							<option value="clinical immunology">Clinical Immunology</option>
+							<option value="Cardiologist">Cardiologist</option>
+							<option value="chest physician">Chest Physician</option>
+							<option value="Gynaecologist">Gynaecologist</option>
+							<option value="nuerologist">Neurologist</option>
+							<option value="urologist">Urologist</option>
+							<option value="Plastic Surgeon">Plastic Surgeon</option>
+							<option value="Orthopaedic">Orthopaedic</option>
 						</select>
 					</div>
 
