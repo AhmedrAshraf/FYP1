@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useLocation } from "react-router";
 import { useFirestore } from "../../hooks/useFirestore";
 import { projectFirestore, storageRef, timestamp } from "../../firebase/config";
+import Swal from 'sweetalert2';
 
 function SelectTime() {
 	const location = useLocation();
@@ -59,7 +60,11 @@ function SelectTime() {
 				if (doctor.id === user.uid) {
 					setTime("");
 					setdate("");
-					alert(`${doctor.name}, please login as a patient!`);
+					Swal.fire({
+						icon: 'success',
+						title: 'login as a patient!',
+						text: "${doctor.name}, please log in as a patient!",
+					});
 				}
 			});
 		}
@@ -82,7 +87,11 @@ function SelectTime() {
 				}
 				addNotification(location.state.doctorData.docID, notification)
 					.then(res => {
-						alert(`${user.displayName} your request has been submitted, Please wait for Dr ${location.state.doctorData.name}'s approval`);
+						Swal.fire({
+							icon: 'success',
+							title: ' Please wait',
+							text: " your request has been submitted, Please wait for Dr's approval",
+						});
 					})
 					.catch(error => {
 						// alert(`${user.displayName} there is an error, Please try again`);

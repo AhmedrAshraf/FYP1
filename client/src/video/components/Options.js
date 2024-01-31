@@ -3,6 +3,7 @@ import { SocketContext } from "../SocketContext";
 import { useContext, useEffect, useState } from "react";
 import { useFirestore } from "../../hooks/useFirestore";
 import { useAuthContext } from "../../hooks/useAuthContext";
+import Swal from 'sweetalert2';
 
 const Options = ({ children }) => {
 	const { me, callAccepted, callEnded, leavePatientCall,leaveDoctorCall, callUser } =
@@ -33,7 +34,11 @@ const Options = ({ children }) => {
 		e.preventDefault()
 		sendCallID(doctorDocID, idToCall)
 			.then(() => {
-				alert("Please Wait...")
+				Swal.fire({
+                    icon: 'success',
+                    title: 'wait!!',
+                    text: "Please Wait...",
+                });
 			})
 			.catch((error) => {
 				console.log(error);

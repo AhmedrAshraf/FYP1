@@ -5,6 +5,7 @@ import { useFirestore } from "../../hooks/useFirestore";
 import { SocketContext } from "../../video/SocketContext";
 import { useNavigate } from "react-router";
 import { projectFirestore } from "../../firebase/config";
+import Swal from 'sweetalert2';
 
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { library } from "@fortawesome/fontawesome-svg-core";
@@ -86,11 +87,21 @@ const Notification = () => {
 
 	const approveNotification = (docID, e) => {
 		addNotification(docID, e)
-			.then((res) => {
-				alert("Appointment has been approved");
-			})
+		.then((res) => {
+            // Display success message
+            Swal.fire({
+                icon: 'success',
+                title: 'Appointment Approved',
+                text: 'Appointment has been approved',
+            });
+		})
 			.catch((error) => {
-				alert("Error occurred!");
+				
+				Swal.fire({
+					icon: 'success',
+					title: 'Error',
+					text: 'Error occurred!',
+				});
 			});
 	};
 
@@ -101,7 +112,11 @@ const Notification = () => {
 				window.location.reload();
 			})
 			.catch((error) => {
-				alert("Something is wrong");
+				Swal.fire({
+                    icon: 'success',
+                    title: 'Err!',
+                    text: 'Something is wrong',
+                });
 				console.log(error);
 			});
 	};

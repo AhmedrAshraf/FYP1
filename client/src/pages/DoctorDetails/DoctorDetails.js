@@ -1,5 +1,6 @@
 import "./DoctorDetails.css";
 import { useLocation, useNavigate } from "react-router";
+import Swal from "sweetalert2";
 
 const DoctorDetails = ({user, doctors, fees, patients}) => {
 	const location = useLocation();
@@ -11,7 +12,11 @@ const DoctorDetails = ({user, doctors, fees, patients}) => {
 			if (doctors) {	
 				doctors.forEach((doctor) => {
 					if (doctor.id === user.uid) {
-						alert(`${doctor.name}, please login as a patient!`);
+						Swal.fire({
+							icon: 'success',
+							title: 'Err!',
+							text: 'please login as a patient!',
+						});
 					}
 				});
 			}
@@ -23,7 +28,11 @@ const DoctorDetails = ({user, doctors, fees, patients}) => {
 				});
 			}
 		} else {
-			alert("You are not logged in! Please login...");
+			Swal.fire({
+				icon: 'success',
+				title: ' Please login',
+				text: 'You are not logged in! Please login...',
+			});
 		}
 	}
 

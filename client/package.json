@@ -22,8 +22,10 @@
     "react-router": "^6.6.1",
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
+    "reactjs-popup": "^2.0.6",
     "simple-peer": "^9.11.1",
     "socket.io-client": "^4.5.4",
+    "sweetalert2": "^11.10.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
