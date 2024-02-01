@@ -38,6 +38,7 @@ const Cards = ({ doctors, search }) => {
 	},[])
 
 	return (
+	  	
 		<div className="cards">
 			{docs && search &&
 				docs

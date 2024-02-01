@@ -1,8 +1,8 @@
 import "./DoctorDetails.css";
 import { useLocation, useNavigate } from "react-router";
-import Swal from "sweetalert2";
+import Swal from "sweetalert2"; 
 
-const DoctorDetails = ({user, doctors, fees, patients}) => {
+const DoctorDetails = ({user, doctors, patients}) => {
 	const location = useLocation();
 	const Navigate = useNavigate();
 
@@ -47,8 +47,10 @@ const DoctorDetails = ({user, doctors, fees, patients}) => {
 						<h5>{location.state.data.name}</h5>
 						<p>{location.state.data.email}</p>
 						<p>{location.state.data.category}</p>
-						<p>{location.state.data.experience} years experience</p>
+						<p>experience:  {location.state.data.experience} years</p>
 						<p>{location.state.data.city.name}</p>
+						<p>qualification :  {location.state.data.qualification}</p>
+						
 					</div>
 				</div>
 				<div className="flex-righ">

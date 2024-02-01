@@ -13,6 +13,7 @@ export default function Signup() {
 	const [displayName, setdisplayName] = useState("");
 	const [experience, setExperience] = useState("");
 	const [fees, setFees] = useState("");
+	const [qualification, setQualification] = useState("");
 	const [city, setCity] = useState("");
 	const [cityObj, setCityObj] = useState({});
 	const [cityList, setCityList] = useState([])
@@ -37,7 +38,9 @@ export default function Signup() {
 				cityObj,
 				category,
 				experience,
+				qualification,
 				fees
+				
 			);
 		}
 	}, [url]);
@@ -172,6 +175,19 @@ export default function Signup() {
 							<option value="Plastic Surgeon">Plastic Surgeon</option>
 							<option value="Orthopaedic">Orthopaedic</option>
 						</select>
+					</div>
+					<div className="col-25">
+						<label>qualification</label>
+					</div>
+					<div>
+						<input
+							type="text"
+							id="qualification"
+							required
+							placeholder="qualification"
+							onChange={(e) => setQualification(e.target.value)}
+							value={qualification}
+						/>
 					</div>
 
 					<div className="col-25">
