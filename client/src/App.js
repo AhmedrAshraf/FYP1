@@ -2,7 +2,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { useAuthContext } from "./hooks/useAuthContext";
 
-
 // pages & components
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
