@@ -7,6 +7,7 @@ import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Navbar from "./components/Navbar";
 import { Error } from "./components/Error";
+import Rating from "./pages/Rating/Rating";
 import Cards from "./pages/Card/Cards";
 import DoctorSignup from "./pages/signup/DoctorSignup";
 import PatSignUp from "./pages/signup/PatSignUp";
@@ -76,6 +77,8 @@ function App() {
 						
 						{user && <Route path="/video-call" element={<Video patient={patient} />} />}
 						{!user && <Route path="/video-call" element={ <Error/>} />}
+
+						<Route path="/rating" element={<Rating />} />
 
 						{/* Invalid url */}
 						<Route path="*" element={<Error/>} />

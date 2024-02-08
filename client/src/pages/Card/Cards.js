@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { calculateDistance } from "../../utils";
 import _ from "lodash";
 
-const Cards = ({ doctors, search }) => {
+const Cards = ({ doctors, search, sortOption }) => {
 	const {user} = useAuthContext();
 	const [docs, setDocs] = useState(doctors);
 	const filterDoctors = async () => {
@@ -24,18 +24,28 @@ const Cards = ({ doctors, search }) => {
 			return dct
 		})
 
-		
+	let sortedDocs;
 
-		const sortedDocs = _.sortBy(filteredDoctors, 'distance');
+    if (sortOption === "fees") {
+      sortedDocs = filteredDoctors.sort((a, b) => parseInt(a.fees) - parseInt(b.fees));
+    } else if (sortOption === "experience") {
+      sortedDocs = filteredDoctors.sort((a, b) => parseInt(b.experience) - parseInt(a.experience));
+    } else if (sortOption === "nearest") {
+      sortedDocs = filteredDoctors.sort((a, b) => parseInt(a.distance) - parseInt(b.distance));
+    }
+	else{
+		sortedDocs = filteredDoctors;
 
-		setDocs(sortedDocs);
-		
-	}	
-	useEffect(() => {
-		if(user){
-			filterDoctors()
-		}
-	},[])
+	}
+
+    setDocs(sortedDocs);
+  };
+
+  useEffect(() => {
+    if (user) {
+      filterDoctors();
+    }
+  }, [sortOption]);
 
 	return (
 	  	
