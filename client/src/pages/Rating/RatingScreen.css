@@ -1,0 +1,56 @@
+.rating-screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .rating-screen {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .rating-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+  
+  .star {
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0 5px;
+  }
+
+  .review-input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
