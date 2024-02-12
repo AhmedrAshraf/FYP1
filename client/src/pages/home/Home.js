@@ -62,7 +62,7 @@ const Home = () => {
       {doctors && doctors.length !== 0 && (
         <section>
           {doctor_error && <p>{doctor_error}</p>}
-		  <div className="sort-container">
+          <div className="sort-container">
 
           <label htmlFor="sort">Sort By:</label>
           <select
@@ -74,8 +74,9 @@ const Home = () => {
             <option value="fees">Fees</option>
             <option value="experience">Experience</option>
             <option value="nearest">Nearest</option>
+            <option value="rating">Rating</option>
           </select>
-		  </div>
+        </div>
           {doctors && (
             <Cards
               doctors={doctors}

@@ -2,16 +2,19 @@ import "./RatingScreen.css";
 import React, { useState } from "react";
 import StarIcon from '@mui/icons-material/Star';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-import { useAuthContext } from "../../hooks/useAuthContext";
 import { useFirestore } from "../../hooks/useFirestore"
 import IconButton from '@mui/material/IconButton';
+import { useLocation, useNavigate } from "react-router";
 
-const RatingScreen = () => {
-const { addDocument } = useFirestore("reviews");
-
-  const { user } = useAuthContext();
-  const [rating, setRating] = useState(null);
-  const [review, setReview] = useState("");
+  const RatingScreen = () => {
+    const { addDocument } = useFirestore("reviews");
+    const [rating, setRating] = useState(null);
+    const [review, setReview] = useState("");
+    
+    const location = useLocation();
+    const navigate = useNavigate();
+    const patientID = location.state ? location.state.patientID : null;
+    const doctorID = location.state ? location.state.doctorID : null;
 
   const handleRatingChange = (newRating) => {
     setRating(newRating);
@@ -22,14 +25,11 @@ const { addDocument } = useFirestore("reviews");
   };
 
   const handleSubmitRating = () => {
-    const userUID = user ? user.uid : null;
-    addDocument({ rating, review, reviewerUID: userUID });
+    addDocument({ rating, review, doctorID, patientID });
 
-    console.log("Submitted Rating:", rating);
-    console.log("Submitted Review:", review);
-
-    setRating(null);
+    setRating("");
     setReview("");
+    navigate("/");
   };
 
   return (
@@ -61,7 +61,12 @@ const { addDocument } = useFirestore("reviews");
           onChange={handleReviewChange}
         />
 
-        <button className="submit-button" onClick={handleSubmitRating}>
+        <button
+        className="submit-button"
+        onClick={handleSubmitRating}
+        disabled={!rating || !review}
+        style={{ backgroundColor: !rating || !review ? "#CCCCCC" : ""}}
+        >
           Submit Rating
         </button>
       </div>
