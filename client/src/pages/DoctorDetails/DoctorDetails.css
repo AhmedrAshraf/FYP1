@@ -157,3 +157,11 @@
   border: 1px solid #006;
   color: #006;
 }
+.drReview {
+  border: 1px solid black;
+  color: #000;
+  border-radius: 20px;
+  padding: 20px;
+  width: 75vw;
+  margin: 10px auto;
+}
